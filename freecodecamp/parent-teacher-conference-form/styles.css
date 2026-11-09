@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: midnightblue;
+    color: whitesmoke;
+}
+
+main {
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: hwb(240 19% 49%);
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0 5px 15px black;
+}
+
+main .mainHeading, .mainParagraph {
+    text-align: center;
+}
+
+main .mainHeading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+main .mainParagraph {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 10px;
+    columns: rgba(255, 255, 255, 0.499);
+}
+
+form fieldset {
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: rgb(49, 49, 133);
+    color: white;
+}
+
+form fieldset legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+form fieldset :not(.contactMethod) {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+form fieldset input:not(.radioBtn), textarea {
+    width: 90%;
+    padding: 10px;
+    background-color: hsla(240, 34%, 42%, 0.205);
+    border: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 3px wheat;
+}
+
+input:not(.radioBtn), 
+input::placeholder,
+textarea {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+form fieldset .radioBtn {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+form fieldset .radioBtn::before{
+    display: block  ;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(3px, 3px) scale(0);
+    transition: all 0.3s ease-in;
+}
+
+form fieldset .radioBtn:checked::before {
+    background-color: lightgreen;
+    transform: translate(3px, 3px) scale(1);
+}
+
+form .formBtn {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+    background-color: #4169e1;
+    color: white;
+}

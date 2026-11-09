@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent-Teacher Conference Form</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainHeading">Parent-Teacher Conference Form</h1>
+        <p class="mainParagraph">Please fill out the form below to help schedule your parent-teacher conference.</p>
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="studentName">Student Name:</label>
+                <input id="studentName" type="text" required placeholder="E.g.Jane Doe" />
+
+                <label for="studentGrade">Student Grade:</label>
+                <input id="studentGrade" type="number" required placeholder="E.g.4" />
+            </fieldset>
+            <fieldset>
+                <legend>Parent/Guardian Information</legend>
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input id="parentName" type="text" required placeholder="E.g. Nancy Doe" />
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <label for="contactEmail" class="contactMethod">Email:</label>
+                <input type="radio" id="contactEmail" class="radioBtn contactMethod" required />
+                <label for="contactPhone" class="contactMethod">Phone:</label>
+                <input type="radio" id="contactPhone" class="radioBtn contactMethod" required />
+            </fieldset>
+            <fieldset>
+                <legend>Additional Notes</legend>
+                <p>Any specific concerns or topics you'd like to discuss?</p>
+                <textarea row="4" cols="50" ></textarea>
+            </fieldset>
+            <button class="formBtn">Submit Form</button>
+        </form>
+    </main>
+</body>
+</html>
