@@ -79,6 +79,7 @@ button {
     background-color: rgb(249, 186, 68);
     font-size: 18px;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 button:hover {
