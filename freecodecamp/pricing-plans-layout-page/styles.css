@@ -55,7 +55,7 @@ h2, p {
 
 .cross::before {
     content: "✗";
-    color: green;
+    color: red;
     font-weight: bold;
     margin: 0 10px;
 }
